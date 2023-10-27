@@ -1,0 +1,21 @@
+{
+    "name": "logavel/track-logs",
+    "description": "This Package will helping you to track PHP logs",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Logavel\\TrackLogs\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "7.8.0"
+    },
+    "authors": [
+        {
+          "name": "Daxit Zadafiya",
+          "email": "daxitzadafiya.work@gmail.com"
+        }
+    ]
+}
