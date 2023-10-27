@@ -7,11 +7,12 @@ use Illuminate\Support\Facades\Auth;
 
 class Log
 {
-    protected static $base_url = 'http://127.0.0.1:5000';
-
+    
     public static function log($message)
     {
         try {
+            $config = require_once __DIR__.'../config.php';
+            $base_url = $config['HOST_URL'];
             $httpClient = new Client();
             $user_details = Auth::check() ? Auth::user()->toArray() : Null;
 
@@ -21,7 +22,7 @@ class Log
                 'type' => 'PHP'
             ];
 
-            $response = $httpClient->post(self::$base_url."/logs", [
+            $response = $httpClient->post($base_url."/logs", [
                 'json' => $data,
             ]);
 
