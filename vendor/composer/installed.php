@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'logavel/track-logs',
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
-        'reference' => '09eab35fbce18aa1a850630b9453d6ed226443b9',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => 'd39c6ac20e4dcc21e799ba5c63a5562aff129393',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -38,9 +38,9 @@
             'dev_requirement' => false,
         ),
         'logavel/track-logs' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '09eab35fbce18aa1a850630b9453d6ed226443b9',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'd39c6ac20e4dcc21e799ba5c63a5562aff129393',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
