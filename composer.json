@@ -6,8 +6,7 @@
     "autoload": {
         "psr-4": {
             "Logavel\\TrackLogs\\": "src/"
-        },
-        "files": ["config.php"]
+        }
     },
     "minimum-stability": "dev",
     "require": {

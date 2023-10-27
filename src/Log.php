@@ -11,7 +11,9 @@ class Log
     public static function log($message)
     {
         try {
-            $config = require_once __DIR__.'../config.php';
+            $rootPath = dirname(__DIR__, 1);
+            $configFilePath = $rootPath . '/config.php';
+            $config = is_file($configFilePath) ? require $configFilePath : [];
             $base_url = $config['HOST_URL'];
             $httpClient = new Client();
             $user_details = Auth::check() ? Auth::user()->toArray() : Null;
